@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Ruby wrapper for FlexBoxGrid"
   spec.description   = "Allows you to include http://flexboxgrid.com/ in your application alongside some view helper methods"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/urielhdz/flexbox_rb"
   spec.license       = "MIT"
 
   spec.files         = Dir["{lib,vendor}/**/*"]
