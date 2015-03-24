@@ -5,7 +5,7 @@ module MyFlexboxHelper
 			define_method("grid_#{device}_#{val}") do |args = {}, &block|
 				args[:class] = args.has_key? :class ? "#{args[:class]} col-#{device}-#{val}" : "col-#{device}-#{val}"
 				attrs = args.map {|k,v| "#{k}=#{v}" }.join(" ")
-				html+= "<div #{args}"
+				html= "<div #{args}"
 				html+= "<div class='box'>"
 				html+= capture(&block)
 				html+= "</div></div>"
