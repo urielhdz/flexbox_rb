@@ -1,4 +1,5 @@
 require "flexbox_rb/version"
+require "flexbox_rb/my_flexbox_helper"
 
 module FlexboxRb
   class Engine < ::Rails::Engine

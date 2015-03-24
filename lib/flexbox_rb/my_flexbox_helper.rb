@@ -1,4 +1,4 @@
-module MyFlexBoxHelper
+module MyFlexboxHelper
 	
 	["md,xs,lg"].each do |device|
 		1..13.times do |val|
