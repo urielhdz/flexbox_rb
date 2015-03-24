@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add the css file you your application.css file
+```css
+*= require flexboxgrid
+```
 
 ## Development
 
