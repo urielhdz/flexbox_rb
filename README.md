@@ -44,9 +44,13 @@ Outputs:
 
 ##Available methods
 grid_lg_n
+
 grid_md_n
+
 grid_sm_n
+
 grid_xs_n
+
 
 Where n is a number >=1 and <=12
 
