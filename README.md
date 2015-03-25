@@ -25,7 +25,7 @@ Or install it yourself as:
 
 ## Usage
 
-Add the css file you your application.css file
+Add the css file to your application.css file
 ```css
 *= require flexboxgrid
 ```
