@@ -9,7 +9,7 @@ module MyFlexboxHelper
 				html+= "<div class='box'>"
 				html+= capture(&block)
 				html+= "</div></div>"
-				html
+				html.html_safe
 			end
 		end
 	end
