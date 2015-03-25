@@ -1,8 +1,11 @@
 # FlexboxRb
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/flexbox_rb`. To experiment with that code, run `bin/console` for an interactive prompt.
+FlexBoxRb is a wrapper for the awesome gryd system from [@kristoferjoseph](https://github.com/kristoferjoseph), original project can be found here: https://github.com/kristoferjoseph/flexboxgrid.
 
-TODO: Delete this and the text above, and describe your gem
+This gem allows you to easily include FlexboxGrid into your projects, it also provides your views with some helper methods to create grid dynamic gryd systems.
+
+Plus, with our custom methods you don't have to write `<div class="box"></div>` for each one of your elements in the grid, because the helper methods already do so ;)
+
 
 ## Installation
 
