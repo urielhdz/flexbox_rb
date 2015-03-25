@@ -27,6 +27,29 @@ Add the css file you your application.css file
 *= require flexboxgrid
 ```
 
+It also allows you to use custom methods for the grid in your views. For example:
+
+```ruby
+grid_md_12 do
+ <h1> Hola mundo </h1>
+end
+```
+
+Outputs:
+```html
+<div class="col-md-6"><div class="box">
+ <h1> Hola mundo </h1>
+</div></div>
+```
+
+##Available methods
+grid_lg_n
+grid_md_n
+grid_sm_n
+grid_xs_n
+
+Where n is a number >=1 and <=12
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
