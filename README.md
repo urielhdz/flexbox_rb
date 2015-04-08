@@ -1,8 +1,11 @@
 # FlexboxRb
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/flexbox_rb`. To experiment with that code, run `bin/console` for an interactive prompt.
+FlexBoxRb is a wrapper for the awesome gryd system from [@kristoferjoseph](https://github.com/kristoferjoseph), original project can be found here: https://github.com/kristoferjoseph/flexboxgrid.
 
-TODO: Delete this and the text above, and describe your gem
+This gem allows you to easily include FlexboxGrid into your projects, it also provides your views with some helper methods to create grid dynamic gryd systems.
+
+Plus, with our custom methods you don't have to write `<div class="box"></div>` for each one of your elements in the grid, because the helper methods already do so ;)
+
 
 ## Installation
 
@@ -22,10 +25,37 @@ Or install it yourself as:
 
 ## Usage
 
-Add the css file you your application.css file
+Add the css file to your application.css file
 ```css
 *= require flexboxgrid
 ```
+
+It also allows you to use custom methods for the grid in your views. For example:
+
+```ruby
+grid_md_12 do
+ <h1> Hola mundo </h1>
+end
+```
+
+Outputs:
+```html
+<div class="col-md-6"><div class="box">
+ <h1> Hola mundo </h1>
+</div></div>
+```
+
+##Available methods
+grid_lg_n
+
+grid_md_n
+
+grid_sm_n
+
+grid_xs_n
+
+
+Where n is a number >=1 and <=12
 
 ## Development
 
@@ -35,7 +65,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/flexbox_rb/fork )
+1. Fork it ( https://github.com/urielhdz/flexbox_rb/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
