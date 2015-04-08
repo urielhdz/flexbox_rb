@@ -40,10 +40,42 @@ end
 
 Outputs:
 ```html
-<div class="col-md-6"><div class="box">
+<div class="col-md-12"><div class="box">
  <h1> Hola mundo </h1>
 </div></div>
 ```
+
+You can also specify the columns number for each device size (xs,sm,md,lg) in the options hash when using the `grid` method
+
+```ruby
+grid md:6,xs:12 do
+ <h1> Hola mundo </h1>
+end
+```
+
+Outputs:
+```html
+<div class="col-md-6 col-xs-12"><div class="box">
+ <h1> Hola mundo </h1>
+</div></div>
+```
+
+Every method accepts a hash of options that it's translated in to html attributes, so
+
+```ruby
+grid_md_6 id:"div_id", class:"card", style:"padding:10px" do
+ <h1> Hola mundo </h1>
+end
+```
+
+Outputs
+```html
+<div class="col-md-6 card" id="div_id" style="padding:10px"><div class="box">
+ <h1> Hola mundo </h1>
+</div></div>
+```
+
+
 
 ##Available methods
 grid_lg_n
