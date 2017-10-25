@@ -1,3 +1,3 @@
 module FlexboxRb
-  VERSION = "0.2.8"
+  VERSION = "0.5"
 end
